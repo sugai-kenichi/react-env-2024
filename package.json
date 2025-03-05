@@ -67,5 +67,6 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  }
+  },
+  "ignorePatterns": ["!.storybook"]
 }
