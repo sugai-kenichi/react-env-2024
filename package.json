@@ -13,7 +13,7 @@
         "lint": "eslint src",
         "lint-fix": "eslint src --fix",
         "format": "prettier . --write",
-        "prepare": "npx lint-staged"
+        "prepare": "husky install"
     },
     "dependencies": {
         "react": "^19.0.0",
@@ -42,5 +42,11 @@
         "vite": "^6.2.0",
         "vite-tsconfig-paths": "^5.1.4",
         "vitest": "^3.0.7"
+    },
+    "lint-staged": {
+      "*.{js, jsx, ts, tsx}": [
+        "prettier --write",
+        "eslint --fix"
+      ]
     }
 }
